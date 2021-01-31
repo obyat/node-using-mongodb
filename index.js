@@ -3,8 +3,6 @@ import mongoose from 'mongoose';
 import bodyParser from 'body-parser';
 import routes from './src/routes/routes';
 
-import { connect } from 'mongoose';
-
 
 const app = express();
 const PORT = 4000;
