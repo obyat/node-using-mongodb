@@ -56,9 +56,8 @@ export const getProductWithID = (req, res) => {
 
     export const updateProduct = (req, res) => {
 
-
-        Product.findOneAndUpdate({ _id: req.params.ProductID}, req.body, {new: true, useFindAndModify: false}, (err, Product) => {
-            if (err) {
+        Product.findOneAndUpdate({ _id: req.params.ProductID }, req.body, { new: true, useFindAndModify: false }, (err, Product) => {
+                if (err) {
               res.send(err);
             }
     
@@ -74,8 +73,8 @@ export const getProductWithID = (req, res) => {
               res.send(err);
             }
     
-            res.json({message: 'Successfully deleted product'});
-        }); 
+            res.json({ message: 'successfully deleted product' });
+                }); 
         
     }
     
