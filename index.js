@@ -10,8 +10,7 @@ const PORT = 4000;
 // mongoose connection
 mongoose.Promise = global.Promise;
 
-mongoose.set();
-mongoose.set();
+
 mongoose.connect('mongodb://localhost/productsdb', 
 {
     useCreateIndex: true,

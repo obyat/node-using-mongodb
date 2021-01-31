@@ -1,7 +1,6 @@
 import {addnewProduct} from '../controllers/controllers'
 
-const routes = (app) => {
-    app.rout('/products')
+const routes = (app) => {    app.route('/products')
     
     //Post endpoint
     .post(addnewProduct);
