@@ -11,11 +11,9 @@ const PORT = 4000;
 mongoose.Promise = global.Promise;
 
 
-mongoose.connect('mongodb://localhost/productsdb', 
-{
-    useCreateIndex: true,
-    useUnifiedTopology: true 
-});
+mongoose.set('useCreateIndex', true);
+mongoose.set('useUnifiedTopology', true);
+mongoose.connect('mongodb://localhost/productsdb');
 
 // bodyparser setup
 app.use(bodyParser.urlencoded({ extended: true }));
